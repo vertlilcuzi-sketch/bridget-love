@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Bridget ❤️</title>
 
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ff4d6d, #ff758f);
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    padding: 40px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {text-shadow: 0 0 10px #fff;}
+    to {text-shadow: 0 0 25px #fff;}
+}
+
+.box {
+    background: rgba(255,255,255,0.2);
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.btn {
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.yes {
+    background: white;
+    color: #ff4d6d;
+}
+
+.no {
+    background: black;
+    color: white;
+    position: absolute;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* Floating hearts */
+.heart {
+    position: absolute;
+    color: white;
+    animation: float 6s linear infinite;
+}
+
+@keyframes float {
+    from {transform: translateY(100vh);}
+    to {transform: translateY(-10vh);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="title">Bridget… this is for you ❤️</div>
+
+<div class="box">I didn’t just wake up and decide this… you’ve been on my mind a lot 💭</div>
+
+<div class="box">Every time we talk, my mood changes instantly 😊</div>
+
+<div class="box">I don’t want to keep it in anymore… I really like you 💖</div>
+
+<div class="box">So I just have one question…</div>
+
+<h2>Do you like me too? 👀💘</h2>
+
+<button class="btn yes" onclick="yesClicked()">YES 💖</button>
+<button class="btn no" id="noBtn">NO 😅</button>
+
+<div class="footer">
+Made with ❤️ by lilcuzivert
+</div>
+
+</div>
+
+<script>
+function yesClicked() {
+    window.location.href = "https://wa.me/233XXXXXXXXX?text=I%20like%20you%20too%20❤️";
+}
+
+const noBtn = document.getElementById("noBtn");
+
+noBtn.addEventListener("mouseover", () => {
+    noBtn.style.top = Math.random() * window.innerHeight + "px";
+    noBtn.style.left = Math.random() * window.innerWidth + "px";
+});
+
+// create floating hearts
+for (let i = 0; i < 20; i++) {
+    let heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (3 + Math.random() * 3) + "s";
+    document.body.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
