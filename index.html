@@ -3,134 +3,165 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For Bridget ❤️</title>
+<title>LoveLink GH 💘</title>
 
 <style>
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #ff4d6d, #ff758f);
+    background: #0f172a;
     color: white;
     text-align: center;
-    overflow: hidden;
 }
 
-.container {
+.header {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #ff4d6d, #ff758f);
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.tagline {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.section {
     padding: 40px 20px;
-    position: relative;
-    z-index: 2;
 }
 
-.title {
-    font-size: 28px;
-    font-weight: bold;
-    animation: glow 2s infinite alternate;
-}
-
-@keyframes glow {
-    from {text-shadow: 0 0 10px #fff;}
-    to {text-shadow: 0 0 25px #fff;}
-}
-
-.box {
-    background: rgba(255,255,255,0.2);
+.card {
+    background: #1e293b;
     margin: 15px;
-    padding: 15px;
+    padding: 20px;
     border-radius: 15px;
-    backdrop-filter: blur(10px);
+    transition: 0.3s;
 }
 
-.btn {
-    padding: 12px 20px;
-    margin: 10px;
-    border-radius: 25px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
+.card:hover {
+    transform: scale(1.05);
 }
 
-.yes {
-    background: white;
+.price {
+    font-size: 22px;
+    margin: 10px 0;
     color: #ff4d6d;
 }
 
-.no {
-    background: black;
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #ff4d6d;
     color: white;
-    position: absolute;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #ff758f;
+}
+
+.features {
+    text-align: left;
+    max-width: 400px;
+    margin: auto;
+}
+
+.testimonial {
+    background: #1e293b;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 14px;
 }
 
 .footer {
-    margin-top: 30px;
+    padding: 20px;
     font-size: 12px;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
-/* Floating hearts */
-.heart {
-    position: absolute;
+/* Floating WhatsApp Button */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
     color: white;
-    animation: float 6s linear infinite;
-}
-
-@keyframes float {
-    from {transform: translateY(100vh);}
-    to {transform: translateY(-10vh);}
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="header">
+    <h1>LoveLink GH 💘</h1>
+    <div class="tagline">Turn your feelings into a link</div>
+</div>
 
-<div class="title">Bridget… this is for you ❤️</div>
+<div class="section">
+    <h2>🔥 Our Services</h2>
 
-<div class="box">I didn’t just wake up and decide this… you’ve been on my mind a lot 💭</div>
+    <div class="card">
+        <h3>💘 Crush Page</h3>
+        <p>Ask your crush in a unique way</p>
+        <div class="price">GH₵20 - GH₵30</div>
+        <a class="btn" href="https://wa.me/233206875120?text=I%20want%20a%20Crush%20Page">Order Now</a>
+    </div>
 
-<div class="box">Every time we talk, my mood changes instantly 😊</div>
+    <div class="card">
+        <h3>🎂 Birthday Page</h3>
+        <p>Celebrate in style</p>
+        <div class="price">GH₵30 - GH₵50</div>
+        <a class="btn" href="https://wa.me/233206875120?text=I%20want%20a%20Birthday%20Page">Order Now</a>
+    </div>
 
-<div class="box">I don’t want to keep it in anymore… I really like you 💖</div>
+    <div class="card">
+        <h3>💍 Wedding / 👶 Naming</h3>
+        <p>Modern digital invites</p>
+        <div class="price">GH₵30 - GH₵60</div>
+        <a class="btn" href="https://wa.me/233206875120?text=I%20want%20an%20Event%20Invite">Order Now</a>
+    </div>
+</div>
 
-<div class="box">So I just have one question…</div>
+<div class="section">
+    <h2>✨ Why Choose LoveLink GH?</h2>
+    <div class="features">
+        ✔ Fast delivery ⚡<br>
+        ✔ Clean modern design 🎨<br>
+        ✔ Works on all phones 📱<br>
+        ✔ Easy to share 💬<br>
+    </div>
+</div>
 
-<h2>Do you like me too? 👀💘</h2>
+<div class="section">
+    <h2>💬 What People Say</h2>
 
-<button class="btn yes" onclick="yesClicked()">YES 💖</button>
-<button class="btn no" id="noBtn" onclick="noClicked()">NO 😅</button>
+    <div class="testimonial">“This is actually nice, she loved it 😍”</div>
+    <div class="testimonial">“Simple and clean, worth it 🔥”</div>
+    <div class="testimonial">“Way better than normal invites 💯”</div>
+</div>
+
+<div class="section">
+    <h2>📩 How It Works</h2>
+    <p>1. Click Order<br>2. Send your details<br>3. Get your custom page</p>
+</div>
 
 <div class="footer">
-Made with ❤️ by lilcuzivert
+    📲 0206875120 / 0202116628 <br>
+    LoveLink GH 💘
 </div>
 
-</div>
-
-<script>
-function yesClicked() {
-    window.location.href = "https://wa.me/233206875120?text=I%20like%20you%20too%20❤️";
-}
-
-function noClicked() {
-    window.location.href = "https://wa.me/233206875120?text=Sorry%20I%20don’t%20feel%20the%20same%20😅";
-}
-
-const noBtn = document.getElementById("noBtn");
-
-noBtn.addEventListener("mouseover", () => {
-    noBtn.style.top = Math.random() * window.innerHeight + "px";
-    noBtn.style.left = Math.random() * window.innerWidth + "px";
-});
-
-// floating hearts
-for (let i = 0; i < 20; i++) {
-    let heart = document.createElement("div");
-    heart.className = "heart";
-    heart.innerHTML = "❤️";
-    heart.style.left = Math.random() * 100 + "vw";
-    heart.style.animationDuration = (3 + Math.random() * 3) + "s";
-    document.body.appendChild(heart);
-}
-</script>
+<!-- Floating WhatsApp -->
+<a class="whatsapp" href="https://wa.me/233206875120">💬</a>
 
 </body>
-</html>
+            </html>
